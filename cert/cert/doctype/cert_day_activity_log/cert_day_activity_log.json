@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{cert_activity}-{date}-{user}",
+ "creation": "2022-08-10 08:41:24.958284",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "cert_activity",
+  "column_break_3",
+  "date",
+  "details"
+ ],
+ "fields": [
+  {
+   "fieldname": "cert_activity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cert Activity",
+   "options": "Cert Activity"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Data",
+   "label": "Details"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-10 08:58:23.088020",
+ "modified_by": "Administrator",
+ "module": "Cert",
+ "name": "Cert Day Activity Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

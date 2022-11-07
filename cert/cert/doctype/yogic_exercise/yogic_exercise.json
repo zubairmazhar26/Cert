@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "autoname": "YOGICEXE.#####",
+ "creation": "2022-06-23 01:59:43.989000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "yog_name",
+  "original_name",
+  "body_parts",
+  "indications",
+  "column_break_3",
+  "difficulty_level",
+  "language",
+  "contraindications",
+  "publish",
+  "section_break_5",
+  "description",
+  "section_break_7",
+  "exercise_steps",
+  "column_break_9",
+  "exercise_video",
+  "section_break_11",
+  "steps_html",
+  "section_break_13",
+  "steps_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "original_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Original Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "body_parts",
+   "fieldtype": "Table MultiSelect",
+   "label": "Body Parts",
+   "options": "Body Part Link"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "difficulty_level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Difficulty Level",
+   "options": "Exercise Difficulty Level"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "Language"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "exercise_steps",
+   "fieldtype": "Attach",
+   "label": "Exercise Instructions"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exercise_video",
+   "fieldtype": "Link",
+   "label": "Exercise Video",
+   "options": "Video"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "label": "Exercise Steps"
+  },
+  {
+   "fieldname": "steps_html",
+   "fieldtype": "HTML",
+   "label": "Steps"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "steps_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Steps Table",
+   "options": "Exercise Type Step"
+  },
+  {
+   "fieldname": "indications",
+   "fieldtype": "Table MultiSelect",
+   "label": "Indications",
+   "options": "Indications Link"
+  },
+  {
+   "fieldname": "contraindications",
+   "fieldtype": "Table MultiSelect",
+   "label": "Contraindications",
+   "options": "Indications Link"
+  },
+  {
+   "default": "0",
+   "fieldname": "publish",
+   "fieldtype": "Check",
+   "label": "Publish"
+  },
+  {
+   "fieldname": "yog_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  }
+ ],
+ "links": [],
+ "modified": "2022-06-27 06:42:53.796876",
+ "modified_by": "Administrator",
+ "module": "Cert",
+ "name": "Yogic Exercise",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Healthcare Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Physician",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
